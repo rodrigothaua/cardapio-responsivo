@@ -4,166 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CARDÁPIO RESPONSIVO</title>
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- STYLE -->
     <link rel="stylesheet/less" href="assets/css/style.less">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <header id="cabecalho">
-            <div class="menu-icon">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="menu-hamburguer p-4">
-                      <h5 class="text-white h4">Collapsed content</h5>
-                      <span class="text-muted">Toggleable via the navbar brand.</span>
-                    </div>
-                </div>
-                <nav class="navbar navbar-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-            </div>
     
-            <div class="menu-logo">
-                LOGO
-            </div>
-    
-            <div class="menu-right">
+    <header id="cabecalho">
+        <div class="menu-icon">
+            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+            </a>
+        </div>
+
+        <div class="menu-logo">
+            LOGO
+        </div>
+
+        <div class="menu-right">
+            <a href="#">
                 <i class="bi bi-person"></i>
-            </div>
-        </header>
+            </a>
+        </div>
+
+    </header>
+
     
+
+    <main>
+
+        <!--CARD CATEGORIAS-->
+        <div class="card-categorias">
+            <strong>Categorias</strong>
+            <div class="box-cat">
+                <div class="card-cat">
+                    <div class="icon">
+                        <img src="assets/images/icons/waiter.3c7aad91.svg" alt="">
+                    </div>
+                    <span>Todas</span>
+                </div>
         
+                <div class="card-cat">
+                    <div class="icon">
+                        <img src="assets/images/icons/waiter.3c7aad91.svg" alt="">
+                    </div>
+                    <span>Entradas</span>
+                </div>
+        
+                <div class="card-cat">
+                    <div class="icon">
+                        <img src="assets/images/icons/plate.87931b99.svg" alt="">
+                    </div>
+                    <span>Pratos Principais</span>
+                </div>
     
-        <main>
+                <div class="card-cat">
+                    <div class="icon">
+                        <img src="assets/images/icons/dessert.0a9922fa.svg" alt="">
+                    </div>
+                    <span>Sobremesas</span>
+                </div>
     
-            <!--CARD CATEGORIAS-->
-            <div class="card-categorias">
-                <strong>Categorias</strong>
-                <div class="box-cat">
-                    <div class="card-cat">
-                        <div class="icon">
-                            <img src="assets/images/icons/waiter.3c7aad91.svg" alt="">
-                        </div>
-                        <span>Todas</span>
+                <div class="card-cat">
+                    <div class="icon">
+                        <img src="assets/images/icons/drinks.a6871b7d.svg" alt="">
                     </div>
-            
-                    <div class="card-cat">
-                        <div class="icon">
-                            <img src="assets/images/icons/waiter.3c7aad91.svg" alt="">
-                        </div>
-                        <span>Entradas</span>
+                    <span>Bebidas</span>
+                </div>
+    
+                <div class="card-cat">
+                    <div class="icon">
+                        <img src="assets/images/icons/wine.74c2b49e.svg" alt="">
                     </div>
-            
-                    <div class="card-cat">
-                        <div class="icon">
-                            <img src="assets/images/icons/plate.87931b99.svg" alt="">
-                        </div>
-                        <span>Pratos Principais</span>
-                    </div>
-        
-                    <div class="card-cat">
-                        <div class="icon">
-                            <img src="assets/images/icons/dessert.0a9922fa.svg" alt="">
-                        </div>
-                        <span>Sobremesas</span>
-                    </div>
-        
-                    <div class="card-cat">
-                        <div class="icon">
-                            <img src="assets/images/icons/drinks.a6871b7d.svg" alt="">
-                        </div>
-                        <span>Bebidas</span>
-                    </div>
-        
-                    <div class="card-cat">
-                        <div class="icon">
-                            <img src="assets/images/icons/wine.74c2b49e.svg" alt="">
-                        </div>
-                        <span>Vinhos</span>
-                    </div>
+                    <span>Vinhos</span>
                 </div>
             </div>
-    
-            <!--PRODUTOS-->
-            <div class="produtos">
-                <strong>Produtos</strong>
-    
-                <div class="alert alert-danger" role="alert">
-                    <h2>Atenção</h2>
-                    <strong>Meio prato será cobrado 60% do valor. O tempo médio de entrega de nossos pratos é de 30 a 45 minutos.</strong>
-                </div>
-    
-                <div class="alert alert-success" role="alert">
-                    <h2>Classificação de pratos</h2>
-                    <strong>Meio prato será cobrado 60% do valor. O tempo médio de entrega de nossos pratos é de 30 a 45 minutos.</strong>
-                </div>
-    
-                <div class="categorias">
-                    <div class="title-categorias">
-                        <img src="assets/images/icons/waiter-white.d21771a0.svg" alt="">
-                        <span>Entradas</span>
-                    </div>
-    
-                    <div class="produto-main">
-                        <img src="assets/images/produtos/b4487f30-ee71-4cd7-9ba4-6075049726df.jfif" alt="">
-                        <div class="produto-descricao">
-                            <div class="produto-title-descricao">
-                                <strong>Casquinha de Siri</strong>
-                                <span>Forminha de Siri</span>
-                            </div>
-                            <div class="produto-preco">
-                                <strong>R$ 19,90</strong>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+
+        <!--PRODUTOS-->
+        <div class="produtos">
+            <strong>Produtos</strong>
+
+            <div class="alert alert-danger" role="alert">
+                <h2>Atenção</h2>
+                <strong>Meio prato será cobrado 60% do valor. O tempo médio de entrega de nossos pratos é de 30 a 45 minutos.</strong>
+            </div>
+
+            <div class="alert alert-success" role="alert">
+                <h2>Classificação de pratos</h2>
+                <strong>Meio prato será cobrado 60% do valor. O tempo médio de entrega de nossos pratos é de 30 a 45 minutos.</strong>
+            </div>
+
+            <div class="categorias">
+                <div class="title-categorias">
+                    <img src="assets/images/icons/waiter-white.d21771a0.svg" alt="">
+                    <span>Entradas</span>
                 </div>
 
-                <div class="categorias">
-                    <div class="title-categorias">
-                        <img src="assets/images/icons/waiter-white.d21771a0.svg" alt="">
-                        <span>Pratos Principais</span>
-                    </div>
-    
-                    <div class="produto-main">
-                        <img src="assets/images/produtos/b4487f30-ee71-4cd7-9ba4-6075049726df.jfif" alt="">
-                        <div class="produto-descricao">
-                            <div class="produto-title-descricao">
-                                <strong>Casquinha de Siri</strong>
-                                <span>Forminha de Siri</span>
-                            </div>
-                            <div class="produto-preco">
-                                <strong>R$ 19,90</strong>
-                            </div>
+                <div class="produto-main">
+                    <img src="assets/images/produtos/b4487f30-ee71-4cd7-9ba4-6075049726df.jfif" alt="">
+                    <div class="produto-descricao">
+                        <div class="produto-title-descricao">
+                            <strong>Casquinha de Siri</strong>
+                            <span>Forminha de Siri</span>
+                        </div>
+                        <div class="produto-preco">
+                            <strong>R$ 19,90</strong>
                         </div>
                     </div>
                 </div>
             </div>
-    
-    
-        </main>
-    
-        <footer>
-            <a href="#">Política de Privacidade</a>
-            <div class="creditos">
-                <span>Feito com amor por <a href="#">RB3 Digital</a></span>
-            </div>
-        </footer>
-    </div><!-- end container fluid -->
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+            <div class="categorias">
+                <div class="title-categorias">
+                    <img src="assets/images/icons/waiter-white.d21771a0.svg" alt="">
+                    <span>Pratos Principais</span>
+                </div>
+
+                <div class="produto-main">
+                    <img src="assets/images/produtos/b4487f30-ee71-4cd7-9ba4-6075049726df.jfif" alt="">
+                    <div class="produto-descricao">
+                        <div class="produto-title-descricao">
+                            <strong>Casquinha de Siri</strong>
+                            <span>Forminha de Siri</span>
+                        </div>
+                        <div class="produto-preco">
+                            <strong>R$ 19,90</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <a href="#">Política de Privacidade</a>
+        <div class="creditos">
+            <span>Desenvolvido por <a href="#">RB3 Digital</a></span>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+    <!-- Importando o js do bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>s
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
-
-    <script>
-        !function(e){function r(r){for(var n,a,i=r[0],c=r[1],f=r[2],s=0,p=[];s<i.length;s++)a=i[s],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&p.push(o[a][0]),o[a]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(l&&l(r);p.length;)p.shift()();return u.push.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var c=t[i];0!==o[c]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise((function(r,n){t=o[e]=[r,n]}));r.push(t[2]=n);var u,i=document.createElement("script");i.charset="utf-8",i.timeout=120,a.nc&&i.setAttribute("nonce",a.nc),i.src=function(e){return a.p+"static/js/"+({}[e]||e)+"."+{3:"5a0a41f9",4:"313dc77b"}[e]+".chunk.js"}(e);var c=new Error;u=function(r){i.onerror=i.onload=null,clearTimeout(f);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,t[1](c)}o[e]=void 0}};var f=setTimeout((function(){u({type:"timeout",target:i})}),12e4);i.onerror=i.onload=u,document.head.appendChild(i)}return Promise.all(r)},a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/",a.oe=function(e){throw console.error(e),e};var i=this["webpackJsonpbs-food-menu"]=this["webpackJsonpbs-food-menu"]||[],c=i.push.bind(i);i.push=r,i=i.slice();for(var f=0;f<i.length;f++)r(i[f]);var l=c;t()}([])
-    </script>
 </body>
 </html>
