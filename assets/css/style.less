@@ -1,0 +1,303 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&family=Roboto:wght@700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    color: rgb(27, 28, 30);
+
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    color: rgb(27, 28, 30);
+    background: #f1f1f1;
+}
+
+
+
+#cabecalho{
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 16px 0px;
+    background: rgb(248, 248, 248);
+    width: 100%;
+    .menu-icon{
+        justify-content: flex-start;
+
+        .menu-hamburguer{
+            background: #fff;
+            border-radius: 10px;
+        }
+    }
+
+    .menu-logo{
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .menu-right{
+        justify-content: flex-end;
+        margin-right: 1rem;
+
+        i{
+            font-size: 2rem;
+        }
+    }
+}
+
+main{
+    margin: 30px;
+
+    .card-categorias{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    
+        strong{
+            text-align: 18px;
+            font-weight: 500;
+        }
+    
+        .box-cat{
+            display: flex;
+            align-content: flex-start;
+            overflow-x: scroll;
+            column-gap: 20px;
+    
+            .card-cat{
+                width: 150px;
+                height: 150px;
+                min-width: 150px;
+                scroll-snap-align: start;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                flex-direction: column;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                padding: 16px;
+                margin-bottom: 12px;
+                border: none;
+                border-radius: 10px;
+                box-shadow: rgb(0 0 0 / 10%) 3px 3px;
+                cursor: pointer;
+                background: #fff;
+        
+                .icon{
+                    display: flex;
+                    width: 50px;
+                    height: 50px;
+                    min-width: 40px;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    border: 2px solid rgb(244, 244, 244);
+                    background: rgb(253, 253, 251);
+                    border-radius: 50%;
+        
+                    img{
+                        max-width: 4rem;
+                    }
+                }
+        
+                span{
+                    text-align: center;
+                }
+            }
+        }
+
+        ::-webkit-scrollbar{
+            width: 0px;
+            background: transparent;
+        }
+
+
+    }
+
+    .produtos{
+        padding: 16px 0px 16px;
+
+        strong{
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        h2{
+            
+        }
+
+        .alert-danger{
+            display: flex;
+            margin-top: 16px;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            background: rgb(252, 96, 96);
+
+            h2{
+                color: #fff;
+                font-size: 21px;
+                margin-bottom: 0px 0px 16px;
+            }
+
+            strong{
+                color: #fff;
+            }
+        }
+
+        .alert-success{
+            display: flex;
+            margin-top: 16px;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            background: rgb(46, 204, 113);
+
+            h2{
+                color: #fff;
+                font-size: 21px;
+                margin-bottom: 0px 0px 16px;
+            }
+
+            strong{
+                color: #fff;
+            }
+        }
+
+        .categorias{
+            flex: 1 1 0%;
+            display: flex;
+            flex-flow: column wrap;
+            .title-categorias{
+                width: 100%;
+                scroll-margin-top: 180px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                background: rgb(4, 91, 57);
+                font-size: 20px;
+                padding: 16px 18px;
+                border-radius: 8px;
+                box-shadow: rgb(0 0 0 / 10%) 3px 3px 8px 0px;
+                margin-bottom: 16px;
+                column-gap: 10px;
+                img{
+                    height: 28px;
+                    width: 28px;
+                    color: rgb(244, 244, 244);
+                }
+
+                span{
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
+
+            .produto-main{
+                display: flex;
+                flex: 0 1 calc(33.3333% - 12px);
+                cursor: pointer;
+                position: relative;
+                border: 0px;
+                outline: 0px;
+                padding: 8px;
+                height: 166px;
+                border-radius: 8px;
+                box-shadow: rgb(0 0 0 / 10%) 3px 3px 16px 0px;
+                transition: box-shadow 0.4s ease 0s;
+                background: rgb(255, 255, 255);
+                margin-bottom: 24px;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 8px;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+
+                .produto-descricao{
+                    display: flex;
+                    flex-direction: column;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    height: 100%;
+                    padding: 8px;
+
+                    .produto-title-descricao{
+                        display: flex;
+                        flex-direction: column;
+
+                        strong{
+                            font-size: 14px;
+                            margin: 0px;
+                            padding: 0px;
+                            outline: 0px;
+                            box-sizing: border-box;
+                            font-family: Poppins, serif;
+                            -webkit-tap-highlight-color: transparent;
+                            color: rgb(27, 28, 30);
+                            font-weight: bold;
+                        }
+
+                        span{
+                            margin-top: 4px;
+                            font-size: 12px;
+                            text-align: start;                            
+                        }
+                    }
+
+                    .produto-preco{
+                        display: flex;
+
+                        strong{
+                            font-size: 16px;
+                            margin-top: 4px;
+                            font-weight: 500;
+                            box-sizing: border-box;
+                            color: rgb(27, 28, 30);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    max-height: 120px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding: 8px 32px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 999;
+    background: rgb(255, 255, 255);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+    a{
+        color: rgb(4, 91, 57);
+    }
+}
