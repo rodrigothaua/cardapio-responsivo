@@ -1,3 +1,13 @@
+/*
+Theme name: Cardápio Word;
+Theme URI: ;
+Author: Rodrigo Thauã;
+Author URI: https://www.instagram.com/rodrigothaua;
+Github Theme URI: ;
+Description: ;
+Version: 1.0;
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&family=Roboto:wght@700&display=swap');
 
 *{
@@ -78,10 +88,9 @@ main{
 .card-categorias
 .box-cat
 .card-cat{
-    /*width: 150px;
+    width: 150px;
     height: 150px;
-    min-width: 150px;*/
-    min-width: 28%;
+    min-width: 150px;
     scroll-snap-align: start;
     display: flex;
     -webkit-box-align: center;
